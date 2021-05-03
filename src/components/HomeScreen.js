@@ -71,7 +71,7 @@ export default function HomeScreen() {
             >
               <HourglassFilled style={{color:"#262626", fontSize:"2rem"}}  />
             </div>
-            Stuck on traffic ?
+            Stuck in traffic ?
           </p>
           <p style={{ fontSize: "14px", marginBottom: "0" }}>
             Find shortest route ...
