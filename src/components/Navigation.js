@@ -1,14 +1,24 @@
 import React from 'react'
+import {Link,useHistory} from 'react-router-dom'
 import {Menu} from 'antd'
+
+
 
 const {SubMenu} = Menu
 export default function Navigation() {
+    const history = useHistory()
+    function servicesHandler(){
+        history.go('/services')
+        }
+
     return (
         <Menu mode="horizontal">
             <Menu.Item>
+                <Link to="/">
                 Home
+                </Link>
             </Menu.Item>
-            <SubMenu title="Services">
+            <SubMenu title="Services" onTitleClick={servicesHandler}>
                 <Menu.Item style={{margin:"0"}}>
                     Track car
                 </Menu.Item>
