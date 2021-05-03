@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Card, Button } from "antd";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function HomeScreen() {
+  const [load, setLoad] = useState(false)
+  function loadHandler(){
+    setLoad(true)
+    setTimeout(()=>{
+      setLoad(false)
+
+    },3000)
+  }
   return (
     <div style={{marginTop:"5rem"}}>
       <Row justify="space-around" align="middle" style={{ marginTop: ".5rem"}}>
@@ -70,13 +78,18 @@ export default function HomeScreen() {
           <Button
             style={{
               backgroundColor: "#ad6800",
-              borderRadius: "100px",
+              borderRadius: "5px",
               border: "0",
+              color:"white"
+            
             }}
+            onClick={loadHandler}
+            loading={load}
           >
-            <Link to="/traffic" style={{ color: "white" }}>
-              More
-            </Link>
+            More Info..
+            {/* <Link to="/traffic" style={{ color: "white" }}>
+              More Info
+            </Link> */}
           </Button>
         </Card>
       </Row>
