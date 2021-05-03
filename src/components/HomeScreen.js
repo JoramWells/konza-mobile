@@ -19,14 +19,36 @@ export default function HomeScreen() {
           </Button>
         </Card>
       </Row>
+      <Row justify="space-around" align="middle"
+        style={{ marginTop: ".5rem", textAlign: "center" }}
+
+      >
+          <Card style={{width:"20rem"}}>
+              <h2>About us</h2>
+          </Card>
+      </Row>
       <Row
         justify="space-around"
         align="middle"
         style={{ marginTop: ".5rem", textAlign: "center" }}
       >
-        <Card style={{ width: "20rem", borderRadius: "5px" }}>
-          <h2>About us</h2>
+        <Card style={{ width: "20rem", borderRadius: "5px", backgroundColor:"rgb(46,139,87)", color:"white" }}>
+          <h3 style={{color:"white"}}>Traffic jam</h3>
+          <p>
+              Xpress cloud is an online platform that helps you get to work on time ...
+          </p>
         </Card>
+      </Row>
+      <Row
+      justify="space-around"
+      align="middle"
+      style={{ marginTop: ".5rem", textAlign: "center" }}
+
+      >
+      <Card style={{backgroundColor:"rgb(27,85,131)", width:"20rem", borderRadius:"5px"}}>
+          <h3 style={{color:"white"}}>Car theft</h3>
+
+</Card>
       </Row>
     </>
   );
