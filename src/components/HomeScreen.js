@@ -1,21 +1,34 @@
 import React from "react";
 import { Row, Card, Button } from "antd";
-import { GlobalOutlined, HourglassFilled, WarningFilled } from "@ant-design/icons";
+import {
+  GlobalOutlined,
+  HourglassFilled,
+  WarningFilled,
+} from "@ant-design/icons";
 // import { Link } from "react-router-dom";
 
 export default function HomeScreen() {
   return (
     <div style={{ marginTop: "3.5rem" }}>
-      <Row justify="space-around" align="middle" style={{ marginTop: ".5rem",textAlign:"center" }}>
-        <Card
+      <Row
+        justify="space-around"
+        align="middle"
+        style={{ marginTop: ".5rem" }}
+      >
+        <header
           style={{
             width: "25rem",
             backgroundColor: "rgb(54,69,79)",
             color: "white",
+            textAlign: "center"
           }}
         >
           <h2 style={{ color: "white" }}>Welcome to Xpress Cloud</h2>
-        </Card>
+          <div style={{width:"235px", display:"flex", margin:"auto"}}>
+          <p>Online cloud platform that provides realtime information about traffic status.</p>
+
+          </div>
+        </header>
       </Row>
       <Row
         justify="space-around"
@@ -29,9 +42,9 @@ export default function HomeScreen() {
             borderRadius: "5px",
           }}
         >
-          <h2 style={{margin:"0"}}>About us</h2>
+          <h2 style={{ margin: "0" }}>About us</h2>
 
-          <p style={{margin:"0"}}>
+          <p style={{ margin: "0" }}>
             Xpress Cloud is an online based platform that uses ML and AI to
             provide realtime information about traffic flow.
           </p>
@@ -59,18 +72,18 @@ export default function HomeScreen() {
             color: "white",
           }}
         >
+          <div
+            style={{
+              backgroundColor: "",
+              width: "2.4rem",
+              display: "block",
+              margin: "auto",
+              borderRadius: "150px",
+            }}
+          >
+            <HourglassFilled style={{ color: "#262626", fontSize: "1.9rem" }} />
+          </div>
           <p style={{ color: "white", fontSize: "18px", margin: "0" }}>
-            <div
-              style={{
-                backgroundColor: "",
-                width: "2.4rem",
-                display: "block",
-                margin: "auto",
-                borderRadius: "150px",
-              }}
-            >
-              <HourglassFilled style={{color:"#262626", fontSize:"1.9rem"}}  />
-            </div>
             Stuck in traffic ?
           </p>
           <p style={{ fontSize: "14px", marginBottom: "0" }}>
@@ -91,18 +104,18 @@ export default function HomeScreen() {
             color: "white",
           }}
         >
+          <div
+            style={{
+              backgroundColor: "",
+              width: "1.5rem",
+              display: "block",
+              margin: "auto",
+              borderRadius: "100px",
+            }}
+          >
+            <GlobalOutlined style={{ color: "#262626", fontSize: "1.9rem" }} />
+          </div>
           <p style={{ color: "white", fontSize: "18px", margin: "0" }}>
-            <div
-              style={{
-                backgroundColor: "",
-                width: "1.5rem",
-                display: "block",
-                margin: "auto",
-                borderRadius: "100px",
-              }}
-            >
-              <GlobalOutlined style={{color:"#262626", fontSize:"1.9rem"}} />
-            </div>
             Lost a vehicle?
           </p>
           <p style={{ marginBottom: "0" }}>Track your lost vehicle ...</p>
@@ -121,18 +134,18 @@ export default function HomeScreen() {
             color: "white",
           }}
         >
+          <div
+            style={{
+              backgroundColor: "",
+              width: "1.5rem",
+              display: "block",
+              margin: "auto",
+              borderRadius: "100px",
+            }}
+          >
+            <WarningFilled style={{ color: "#262626", fontSize: "1.9rem" }} />
+          </div>
           <p style={{ color: "white", fontSize: "18px", margin: "0" }}>
-            <div
-              style={{
-                backgroundColor: "",
-                width: "1.5rem",
-                display: "block",
-                margin: "auto",
-                borderRadius: "100px",
-              }}
-            >
-              <WarningFilled style={{color:"#262626", fontSize:"1.9rem"}} />
-            </div>
             Find accidents
           </p>
           <p style={{ marginBottom: "0" }}>Identify black spots ...</p>
