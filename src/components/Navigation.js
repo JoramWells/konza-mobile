@@ -5,7 +5,7 @@ import { Menu } from "antd";
 const { SubMenu } = Menu;
 export default function Navigation() {
   return (
-    <Menu mode="horizontal">
+    <Menu mode="horizontal" style={{position:"fixed", width:"100%",top:"0",zIndex:"1"}}>
       <Menu.Item>
         <Link to="/">Home</Link>
       </Menu.Item>
