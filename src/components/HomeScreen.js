@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Card, Button } from "antd";
-import {ArrowRightOutlined, GlobalOutlined, WarningFilled} from '@ant-design/icons'
+import { GlobalOutlined, HourglassFilled} from '@ant-design/icons'
 // import { Link } from "react-router-dom";
 
 export default function HomeScreen() {
@@ -63,7 +63,7 @@ export default function HomeScreen() {
         >
           <p style={{ color: "white", fontSize:"18px", margin:"0" }}> 
           <div style={{backgroundColor:"#262626", width:"1.5rem", display:"block", margin:"auto", borderRadius:"100px"}}>
-            <WarningFilled spin />
+            <HourglassFilled spin />
           </div>
            Stuck on traffic ?</p>
           <p style={{ fontSize: "14px", marginBottom:"0" }}>
