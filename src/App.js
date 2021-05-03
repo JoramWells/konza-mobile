@@ -4,6 +4,7 @@ import './App.css';
 import HomeScreen from './components/HomeScreen';
 import Navigation from './components/Navigation';
 import ServicesScreen from './components/ServicesScreen';
+import TrafficScreen from './components/TrafficScreen';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomeScreen} />
         <Route path="/services" exact component={ServicesScreen} />
+        <Route path="/traffic" exact component={TrafficScreen} />
       </Switch>
 
     </Router>
