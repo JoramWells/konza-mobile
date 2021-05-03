@@ -113,7 +113,7 @@ export default function HomeScreen() {
         <Card
           style={{
             width: "20rem",
-            backgroundColor: "#ad2102",
+            backgroundColor: "#d4380d",
             borderRadius: "5px",
             color:"white",
             textAlign:"center"
@@ -127,7 +127,7 @@ export default function HomeScreen() {
         <Card
           style={{
             width: "20rem",
-            backgroundColor: "#3f6600",
+            backgroundColor: "#5b8c00",
             borderRadius: "5px",
             color:"white",
             textAlign:"center"
