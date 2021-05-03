@@ -6,10 +6,10 @@ import { GlobalOutlined, HourglassFilled, WarningFilled } from "@ant-design/icon
 export default function HomeScreen() {
   return (
     <div style={{ marginTop: "3.5rem" }}>
-      <Row justify="space-around" align="middle" style={{ marginTop: ".5rem" }}>
+      <Row justify="space-around" align="middle" style={{ marginTop: ".5rem",textAlign:"center" }}>
         <Card
           style={{
-            width: "24rem",
+            width: "25rem",
             backgroundColor: "rgb(54,69,79)",
             color: "white",
           }}
@@ -69,7 +69,7 @@ export default function HomeScreen() {
                 borderRadius: "150px",
               }}
             >
-              <HourglassFilled style={{color:"#262626", fontSize:"2rem"}}  />
+              <HourglassFilled style={{color:"#262626", fontSize:"1.9rem"}}  />
             </div>
             Stuck in traffic ?
           </p>
@@ -101,7 +101,7 @@ export default function HomeScreen() {
                 borderRadius: "100px",
               }}
             >
-              <GlobalOutlined style={{color:"#262626", fontSize:"2rem"}} />
+              <GlobalOutlined style={{color:"#262626", fontSize:"1.9rem"}} />
             </div>
             Lost a vehicle?
           </p>
@@ -131,7 +131,7 @@ export default function HomeScreen() {
                 borderRadius: "100px",
               }}
             >
-              <WarningFilled style={{color:"#262626", fontSize:"2rem"}} />
+              <WarningFilled style={{color:"#262626", fontSize:"1.9rem"}} />
             </div>
             Find accidents
           </p>
