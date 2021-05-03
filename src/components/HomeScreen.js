@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Card, Button } from "antd";
-import { RightOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
 export default function HomeScreen() {
