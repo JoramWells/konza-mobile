@@ -9,7 +9,7 @@ export default function HomeScreen() {
       <Row justify="space-around" align="middle" style={{ marginTop: ".5rem" }}>
         <Card
           style={{
-            width: "23rem",
+            width: "24rem",
             backgroundColor: "rgb(54,69,79)",
             color: "white",
           }}
