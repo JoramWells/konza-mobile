@@ -1,15 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row, Card, Button } from "antd";
+import {ArrowRightOutlined, GlobalOutlined, WarningFilled} from '@ant-design/icons'
 // import { Link } from "react-router-dom";
 
 export default function HomeScreen() {
-  const [load, setLoad] = useState(false);
-  function loadHandler() {
-    setLoad(true);
-    setTimeout(() => {
-      setLoad(false);
-    }, 3000);
-  }
+
   return (
     <div style={{ marginTop: "5rem" }}>
       <Row justify="space-around" align="middle" style={{ marginTop: ".5rem" }}>
@@ -66,26 +61,16 @@ export default function HomeScreen() {
             color: "white",
           }}
         >
-          <h3 style={{ color: "white" }}>Stuck on traffic ?</h3>
-          <p style={{ fontSize: "14px" }}>
-            Xpress cloud is an online platform that helps you get to work on
-            time ...
+          <p style={{ color: "white", fontSize:"18px", margin:"0" }}> 
+          <div style={{backgroundColor:"#262626", width:"1.5rem", display:"block", margin:"auto", borderRadius:"100px"}}>
+            <WarningFilled spin />
+          </div>
+           Stuck on traffic ?</p>
+          <p style={{ fontSize: "14px", marginBottom:"0" }}>
+            Find shortest route ...
+            
           </p>
-          <Button
-            style={{
-              backgroundColor: "#ad6800",
-              borderRadius: "5px",
-              border: "0",
-              color: "white",
-            }}
-            onClick={loadHandler}
-            loading={load}
-          >
-            More Info..
-            {/* <Link to="/traffic" style={{ color: "white" }}>
-              More Info
-            </Link> */}
-          </Button>
+
         </Card>
       </Row>
       <Row
@@ -101,19 +86,23 @@ export default function HomeScreen() {
             color: "white",
           }}
         >
-          <h3 style={{ color: "white" }}>Lost a vehicle ?</h3>
-          <p>
-            We can track your lost vehicle to ensure that you recover what you
-            have lost.
+          <p style={{ color: "white", fontSize:"18px",margin:"0" }}>
+          <div style={{backgroundColor:"#262626", width:"1.5rem", display:"block", margin:"auto", borderRadius:"100px"}}>
+            <GlobalOutlined spin />
+          </div>
+             Lost a vehicle?</p>
+          <p style={{ marginBottom:"0"}}>
+            Track your lost vehicle ...
           </p>
-          Find how
+
+          
         </Card>
       </Row>
-      <Row justify="space-around" align="middle" style={{ marginTop: ".5rem" }}>
+      {/* <Row justify="space-around" align="middle" style={{ marginTop: ".5rem" }}>
         <Card
           style={{
             width: "20rem",
-            backgroundColor: "#d4380d",
+            backgroundColor: "#d46b08",
             borderRadius: "5px",
             color:"white",
             textAlign:"center"
@@ -127,7 +116,7 @@ export default function HomeScreen() {
         <Card
           style={{
             width: "20rem",
-            backgroundColor: "#5b8c00",
+            backgroundColor: "#006d75",
             borderRadius: "5px",
             color:"white",
             textAlign:"center"
@@ -136,7 +125,7 @@ export default function HomeScreen() {
           <h3 style={{color:"white"}}>Find a cab</h3>
           <p>Send parcel for as low as 20/=</p>
         </Card>
-      </Row>
+      </Row> */}
     </div>
   );
 }
